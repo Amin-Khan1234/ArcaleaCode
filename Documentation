@@ -1,0 +1,57 @@
+To set up and run the application, follow the steps below:
+
+Pull the code from GitHub:
+
+Clone the repository or download the code from the GitHub repository where the application is hosted.
+
+Install Node.js:
+Download and install Node.js from the official website: https://nodejs.org
+Follow the installation instructions for your operating system.
+
+Install a code editor:
+Download and install a code editor like Visual Studio Code (VS Code) or any other IDE of your choice.
+Open the project folder in your code editor.
+
+Download and set up a SQL server:
+Download and install a SQL server locally, such as MySQL or PostgreSQL.
+Set up a new database for the application. Make note of the database host, username, password, and database name.
+
+Install project dependencies:
+Open a terminal or command prompt.
+Navigate to the project directory using the cd command.
+Run the following command to install the project dependencies specified in the package.json file:
+npm install
+
+Create an environment file:
+In the project directory, create a new file named .env.
+Open the .env file in a text editor.
+Add environment variables:
+Inside the .env file, add the following environment variables and their corresponding values:
+NODE_ENV=development
+PORT=3000
+
+# DATABASE CONNECTION ENVIRONMENT VARIABLES
+DB_HOST=localhost
+DB_USER="username for database"
+DB_NAME=time-tracker
+DB_PASSWORD="passowrd you set for database"
+Adjust the values of the environment variables based on your specific database setup.
+
+Run the application:
+In the terminal or command prompt, navigate to the project directory if you're not already there.
+Run the following command to start the application:
+npm run dev
+The application will start running on http://localhost:3000.
+
+Test the API using Postman:
+Use Postman or any other API testing tool to send requests to the API endpoints.
+Example endpoints to test:
+GET all time entries: http://localhost:3000/time-entries
+POST a new time entry: http://localhost:3000/time-entries
+GET a specific time entry: http://localhost:3000/time-entries/{id}
+UPDATE a time entry: http://localhost:3000/time-entries/{id}
+DELETE a time entry: http://localhost:3000/time-entries/{id}
+
+You can adjust the endpoint URLs and HTTP methods based on your specific routes and requirements.
+
+By following these steps, you should be able to set up and run the application successfully, allowing you to interact with the API using Postman or other tools.
